@@ -1,0 +1,17 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgGameRecording;
+
+public interface IVideoClip {
+
+    public SteamMsgGameRecording.CVideo_BeginGameRecordingSegmentsUpload_Response BeginGameRecordingSegmentsUpload(SteamMsgGameRecording.CVideo_BeginGameRecordingSegmentsUpload_Request request);
+
+    public SteamMsgGameRecording.CVideo_CommitGameRecordingSegmentsUpload_Response CommitGameRecordingSegmentsUpload(SteamMsgGameRecording.CVideo_CommitGameRecordingSegmentsUpload_Request request);
+
+    public SteamMsgGameRecording.CVideo_GameRecordingGetNextBatchOfSegmentsToUpload_Response GetNextBatchOfSegmentsToUpload(SteamMsgGameRecording.CVideo_GameRecordingGetNextBatchOfSegmentsToUpload_Request request);
+
+    public SteamMsgGameRecording.CVideo_GameRecordingCommitSegmentUploads_Response CommitSegmentUploads(SteamMsgGameRecording.CVideo_GameRecordingCommitSegmentUploads_Request request);
+    
+}
+

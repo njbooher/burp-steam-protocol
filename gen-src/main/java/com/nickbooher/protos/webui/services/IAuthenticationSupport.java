@@ -1,0 +1,20 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgAuthenticationSupport;
+
+public interface IAuthenticationSupport {
+
+    public SteamMsgAuthenticationSupport.CAuthenticationSupport_GetTokenHistory_Response GetTokenHistory(SteamMsgAuthenticationSupport.CAuthenticationSupport_GetTokenHistory_Request request);
+
+    public SteamMsgAuthenticationSupport.CAuthenticationSupport_MarkTokenCompromised_Response MarkTokenCompromised(SteamMsgAuthenticationSupport.CAuthenticationSupport_MarkTokenCompromised_Request request);
+
+    public SteamMsgAuthenticationSupport.CAuthenticationSupport_QueryRefreshTokenByID_Response QueryRefreshTokenByID(SteamMsgAuthenticationSupport.CAuthenticationSupport_QueryRefreshTokenByID_Request request);
+
+    public SteamMsgAuthenticationSupport.CAuthenticationSupport_QueryRefreshTokensByAccount_Response QueryRefreshTokensByAccount(SteamMsgAuthenticationSupport.CAuthenticationSupport_QueryRefreshTokensByAccount_Request request);
+
+    public SteamMsgAuthenticationSupport.CAuthenticationSupport_RevokeToken_Response RevokeToken(SteamMsgAuthenticationSupport.CAuthenticationSupport_RevokeToken_Request request);
+    
+}
+

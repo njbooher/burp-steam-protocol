@@ -1,0 +1,28 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgTwoFactor;
+
+public interface ITwoFactor {
+
+    public SteamMsgTwoFactor.CTwoFactor_AddAuthenticator_Response AddAuthenticator(SteamMsgTwoFactor.CTwoFactor_AddAuthenticator_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_FinalizeAddAuthenticator_Response FinalizeAddAuthenticator(SteamMsgTwoFactor.CTwoFactor_FinalizeAddAuthenticator_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_Status_Response QueryStatus(SteamMsgTwoFactor.CTwoFactor_Status_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_Time_Response QueryTime(SteamMsgTwoFactor.CTwoFactor_Time_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_RemoveAuthenticator_Response RemoveAuthenticator(SteamMsgTwoFactor.CTwoFactor_RemoveAuthenticator_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_RemoveAuthenticatorViaChallengeContinue_Response RemoveAuthenticatorViaChallengeContinue(SteamMsgTwoFactor.CTwoFactor_RemoveAuthenticatorViaChallengeContinue_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_RemoveAuthenticatorViaChallengeStart_Response RemoveAuthenticatorViaChallengeStart(SteamMsgTwoFactor.CTwoFactor_RemoveAuthenticatorViaChallengeStart_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_SendEmail_Response SendEmail(SteamMsgTwoFactor.CTwoFactor_SendEmail_Request request);
+
+    public SteamMsgTwoFactor.CTwoFactor_UpdateTokenVersion_Response UpdateTokenVersion(SteamMsgTwoFactor.CTwoFactor_UpdateTokenVersion_Request request);
+    
+}
+

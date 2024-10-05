@@ -1,0 +1,62 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgsSteamLearn;
+
+public interface ISteamLearn {
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_BatchOperation_Response BatchOperation(SteamMsgsSteamLearn.CMsgSteamLearn_BatchOperation_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_CacheData_Response CacheData(SteamMsgsSteamLearn.CMsgSteamLearn_CacheData_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_CreateProject_Response CreateProject(SteamMsgsSteamLearn.CMsgSteamLearn_CreateProject_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_EditProject_Response EditProject(SteamMsgsSteamLearn.CMsgSteamLearn_EditProject_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetAccessTokens_Response GetAccessTokensWeb(SteamMsgsSteamLearn.CMsgSteamLearn_GetAccessTokens_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetBatchedStatus_Response GetBatchedStatus(SteamMsgsSteamLearn.CMsgSteamLearn_GetBatchedStatus_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetDataSource_Response GetDataSource(SteamMsgsSteamLearn.CMsgSteamLearn_GetDataSource_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetEmbeddingValues_Response GetEmbeddingValues(SteamMsgsSteamLearn.CMsgSteamLearn_GetEmbeddingValues_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetFetchStatus_Response GetFetchStatus(SteamMsgsSteamLearn.CMsgSteamLearn_GetFetchStatus_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetFetchStatusVersions_Response GetFetchStatusVersions(SteamMsgsSteamLearn.CMsgSteamLearn_GetFetchStatusVersions_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetLogEvents_Response GetLogEvents(SteamMsgsSteamLearn.CMsgSteamLearn_GetLogEvents_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetNearestEmbedding_Response GetNearestEmbedding(SteamMsgsSteamLearn.CMsgSteamLearn_GetNearestEmbedding_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetProject_Response GetProject(SteamMsgsSteamLearn.CMsgSteamLearn_GetProject_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetTrainLogs_Response GetTrainLogs(SteamMsgsSteamLearn.CMsgSteamLearn_GetTrainLogs_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetTrainStatus_Response GetTrainStatus(SteamMsgsSteamLearn.CMsgSteamLearn_GetTrainStatus_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_GetTrainStatusVersions_Response GetTrainStatusVersions(SteamMsgsSteamLearn.CMsgSteamLearn_GetTrainStatusVersions_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_Inference_Response Inference(SteamMsgsSteamLearn.CMsgSteamLearn_Inference_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_InferenceBackend_Response InferenceBackend(SteamMsgsSteamLearn.CMsgSteamLearn_InferenceBackend_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_InferenceMetadata_Response InferenceMetadata(SteamMsgsSteamLearn.CMsgSteamLearn_InferenceMetadata_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_ListDataSources_Response ListDataSources(SteamMsgsSteamLearn.CMsgSteamLearn_ListDataSources_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_ListProjects_Response ListProjects(SteamMsgsSteamLearn.CMsgSteamLearn_ListProjects_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_PublishProject_Response PublishProject(SteamMsgsSteamLearn.CMsgSteamLearn_PublishProject_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_RegisterDataSource_Response RegisterDataSource(SteamMsgsSteamLearn.CMsgSteamLearn_RegisterDataSource_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_SetTrainLive_Response SetTrainLive(SteamMsgsSteamLearn.CMsgSteamLearn_SetTrainLive_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_SnapshotProject_Response SnapshotProject(SteamMsgsSteamLearn.CMsgSteamLearn_SnapshotProject_Request request);
+
+    public SteamMsgsSteamLearn.CMsgSteamLearn_Train_Response Train(SteamMsgsSteamLearn.CMsgSteamLearn_Train_Request request);
+    
+}
+

@@ -1,0 +1,31 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgPartnerApps;
+
+public interface IPartnerApps {
+
+    public SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Response RequestKVSignUploadToken(SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Response RequestDRMUploadToken(SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Response RequestCEGUploadToken(SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Response RequestDepotUploadToken(SteamMsgPartnerApps.CPartnerApps_RequestUploadToken_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_FinishUploadKVSign_Response FinishUploadKVSign(SteamMsgPartnerApps.CPartnerApps_FinishUpload_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_FinishUploadLegacyDRM_Response FinishUploadDRMUpload(SteamMsgPartnerApps.CPartnerApps_FinishUploadLegacyDRM_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_FinishUpload_Response FinishUploadCEGUpload(SteamMsgPartnerApps.CPartnerApps_FinishUpload_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_FinishUploadDepot_Response FinishUploadDepotUpload(SteamMsgPartnerApps.CPartnerApps_FinishUploadDepot_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_GetDepotBuildResult_Response GetDepotBuildResult(SteamMsgPartnerApps.CPartnerApps_GetDepotBuildResult_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_FindDRMUploads_Response FindDRMUploads(SteamMsgPartnerApps.CPartnerApps_FindDRMUploads_Request request);
+
+    public SteamMsgPartnerApps.CPartnerApps_Download_Response Download(SteamMsgPartnerApps.CPartnerApps_Download_Request request);
+    
+}
+

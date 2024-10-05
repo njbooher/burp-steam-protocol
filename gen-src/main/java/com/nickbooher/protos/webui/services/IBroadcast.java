@@ -1,0 +1,74 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgBroadcast;
+
+public interface IBroadcast {
+
+    public SteamMsgBroadcast.CBroadcast_BeginBroadcastSession_Response BeginBroadcastSession(SteamMsgBroadcast.CBroadcast_BeginBroadcastSession_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_EndBroadcastSession_Response EndBroadcastSession(SteamMsgBroadcast.CBroadcast_EndBroadcastSession_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBroadcastChatInfo_Response GetBroadcastChatInfo(SteamMsgBroadcast.CBroadcast_GetBroadcastChatInfo_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBroadcastChatUserNames_Response GetBroadcastChatUserNames(SteamMsgBroadcast.CBroadcast_GetBroadcastChatUserNames_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBroadcastStatus_Response GetBroadcastStatus(SteamMsgBroadcast.CBroadcast_GetBroadcastStatus_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBroadcastThumbnail_Response GetBroadcastThumbnail(SteamMsgBroadcast.CBroadcast_GetBroadcastThumbnail_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBroadcastUploadStats_Response GetBroadcastUploadStats(SteamMsgBroadcast.CBroadcast_GetBroadcastUploadStats_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBroadcastViewerStats_Response GetBroadcastViewerStats(SteamMsgBroadcast.CBroadcast_GetBroadcastViewerStats_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetBuildClipStatus_Response GetBuildClipStatus(SteamMsgBroadcast.CBroadcast_GetBuildClipStatus_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetClipDetails_Response GetClipDetails(SteamMsgBroadcast.CBroadcast_GetClipDetails_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_GetRTMPInfo_Response GetRTMPInfo(SteamMsgBroadcast.CBroadcast_GetRTMPInfo_Request request);
+
+    public void HeartbeatBroadcast(SteamMsgBroadcast.CBroadcast_HeartbeatBroadcast_Notification request);
+
+    public SteamMsgBroadcast.CBroadcast_InviteToBroadcast_Response InviteToBroadcast(SteamMsgBroadcast.CBroadcast_InviteToBroadcast_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_MuteBroadcastChatUser_Response MuteBroadcastChatUser(SteamMsgBroadcast.CBroadcast_MuteBroadcastChatUser_Request request);
+
+    public void NotifyWebRTCHaveTURNServer(SteamMsgBroadcast.CBroadcast_WebRTCHaveTURNServer_Notification request);
+
+    public SteamMsgBroadcast.CBroadcast_PostChatMessage_Response PostChatMessage(SteamMsgBroadcast.CBroadcast_PostChatMessage_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_RemoveUserChatText_Response RemoveUserChatText(SteamMsgBroadcast.CBroadcast_RemoveUserChatText_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_SendBroadcastStateToServer_Response SendBroadcastStateToServer(SteamMsgBroadcast.CBroadcast_SendBroadcastStateToServer_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_SetClipDetails_Response SetClipDetails(SteamMsgBroadcast.CBroadcast_SetClipDetails_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_SetRTMPInfo_Response SetRTMPInfo(SteamMsgBroadcast.CBroadcast_SetRTMPInfo_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_StartBroadcastUpload_Response StartBroadcastUpload(SteamMsgBroadcast.CBroadcast_StartBroadcastUpload_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_StartBuildClip_Response StartBuildClip(SteamMsgBroadcast.CBroadcast_StartBuildClip_Request request);
+
+    public void StopWatchingBroadcast(SteamMsgBroadcast.CBroadcast_StopWatchingBroadcast_Notification request);
+
+    public SteamMsgBroadcast.CBroadcast_UpdateChatMessageFlair_Response UpdateChatMessageFlair(SteamMsgBroadcast.CBroadcast_UpdateChatMessageFlair_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WatchBroadcast_Response WatchBroadcast(SteamMsgBroadcast.CBroadcast_WatchBroadcast_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCAddHostCandidate_Response WebRTCAddHostCandidate(SteamMsgBroadcast.CBroadcast_WebRTCAddHostCandidate_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCAddViewerCandidate_Response WebRTCAddViewerCandidate(SteamMsgBroadcast.CBroadcast_WebRTCAddViewerCandidate_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCGetHostCandidates_Response WebRTCGetHostCandidates(SteamMsgBroadcast.CBroadcast_WebRTCGetHostCandidates_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCLookupTURNServer_Response WebRTCLookupTURNServer(SteamMsgBroadcast.CBroadcast_WebRTCLookupTURNServer_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCSetAnswer_Response WebRTCSetAnswer(SteamMsgBroadcast.CBroadcast_WebRTCSetAnswer_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCStartResult_Response WebRTCStartResult(SteamMsgBroadcast.CBroadcast_WebRTCStartResult_Request request);
+
+    public SteamMsgBroadcast.CBroadcast_WebRTCStopped_Response WebRTCStopped(SteamMsgBroadcast.CBroadcast_WebRTCStopped_Request request);
+    
+}
+

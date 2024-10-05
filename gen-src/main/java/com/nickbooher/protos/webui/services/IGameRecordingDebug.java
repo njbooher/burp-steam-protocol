@@ -1,0 +1,20 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgGameRecordingDebug;
+
+public interface IGameRecordingDebug {
+
+    public SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineHighlightMarker_Response AddTimelineHighlightMarker(SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineHighlightMarker_Request request);
+
+    public SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineRangeEnd_Response AddTimelineRangeEnd(SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineRangeEnd_Request request);
+
+    public SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineRangeStart_Response AddTimelineRangeStart(SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineRangeStart_Request request);
+
+    public SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineTimestamp_Response AddTimelineTimestamp(SteamMsgGameRecordingDebug.CGameRecordingDebug_AddTimelineTimestamp_Request request);
+
+    public SteamMsgGameRecordingDebug.CGameRecordingDebug_SetTimelineGameMode_Response SetTimelineGameMode(SteamMsgGameRecordingDebug.CGameRecordingDebug_SetTimelineGameMode_Request request);
+    
+}
+

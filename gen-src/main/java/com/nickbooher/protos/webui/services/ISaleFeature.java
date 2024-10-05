@@ -1,0 +1,32 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgSaleFeature;
+
+public interface ISaleFeature {
+
+    public SteamMsgSaleFeature.CSaleFeature_GetFriendsSharedYearInReview_Response GetFriendsSharedYearInReview(SteamMsgSaleFeature.CSaleFeature_GetFriendsSharedYearInReview_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUpdateProcessingProgress_Response GetUpdateProcessingProgress(SteamMsgSaleFeature.CSaleFeature_GetUpdateProcessingProgress_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUserActionData_Response GetUserActionData(SteamMsgSaleFeature.CSaleFeature_GetUserActionData_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUserSharingPermissions_Response GetUserSharingPermissions(SteamMsgSaleFeature.CSaleFeature_GetUserSharingPermissions_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUserYearAchievements_Response GetUserYearAchievements(SteamMsgSaleFeature.CSaleFeature_GetUserYearAchievements_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUserYearInReview_Response GetUserYearInReview(SteamMsgSaleFeature.CSaleFeature_GetUserYearInReview_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUserYearInReviewShareImage_Response GetUserYearInReviewShareImage(SteamMsgSaleFeature.CSaleFeature_GetUserYearInReviewShareImage_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetUserYearScreenshots_Response GetUserYearScreenshots(SteamMsgSaleFeature.CSaleFeature_GetUserYearScreenshots_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_GetYIRCurrentMonthlySummary_Response GetYIRCurrentMonthlySummary(SteamMsgSaleFeature.CSaleFeature_GetYIRCurrentMonthlySummary_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_SetUserActionData_Response SetUserActionData(SteamMsgSaleFeature.CSaleFeature_SetUserActionData_Request request);
+
+    public SteamMsgSaleFeature.CSaleFeature_SetUserSharingPermissions_Response SetUserSharingPermissions(SteamMsgSaleFeature.CSaleFeature_SetUserSharingPermissions_Request request);
+    
+}
+

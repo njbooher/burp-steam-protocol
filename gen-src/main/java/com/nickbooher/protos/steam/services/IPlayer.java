@@ -1,0 +1,115 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgPlayer;
+
+public interface IPlayer {
+
+    public SteamMsgPlayer.CPlayer_GetRecentPlaytimeSessionsForChild_Response GetRecentPlaytimeSessionsForChild(SteamMsgPlayer.CPlayer_GetRecentPlaytimeSessionsForChild_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPlayerLinkDetails_Response GetPlayerLinkDetails(SteamMsgPlayer.CPlayer_GetPlayerLinkDetails_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetMutualFriendsForIncomingInvites_Response GetMutualFriendsForIncomingInvites(SteamMsgPlayer.CPlayer_GetMutualFriendsForIncomingInvites_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetOwnedGames_Response GetOwnedGames(SteamMsgPlayer.CPlayer_GetOwnedGames_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPlayNext_Response GetPlayNext(SteamMsgPlayer.CPlayer_GetPlayNext_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetFriendsGameplayInfo_Response GetFriendsGameplayInfo(SteamMsgPlayer.CPlayer_GetFriendsGameplayInfo_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetGameBadgeLevels_Response GetGameBadgeLevels(SteamMsgPlayer.CPlayer_GetGameBadgeLevels_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetProfileBackground_Response GetProfileBackground(SteamMsgPlayer.CPlayer_GetProfileBackground_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetProfileBackground_Response SetProfileBackground(SteamMsgPlayer.CPlayer_SetProfileBackground_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetMiniProfileBackground_Response GetMiniProfileBackground(SteamMsgPlayer.CPlayer_GetMiniProfileBackground_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetMiniProfileBackground_Response SetMiniProfileBackground(SteamMsgPlayer.CPlayer_SetMiniProfileBackground_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetAvatarFrame_Response GetAvatarFrame(SteamMsgPlayer.CPlayer_GetAvatarFrame_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetAvatarFrame_Response SetAvatarFrame(SteamMsgPlayer.CPlayer_SetAvatarFrame_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetAnimatedAvatar_Response GetAnimatedAvatar(SteamMsgPlayer.CPlayer_GetAnimatedAvatar_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetAnimatedAvatar_Response SetAnimatedAvatar(SteamMsgPlayer.CPlayer_SetAnimatedAvatar_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetSteamDeckKeyboardSkin_Response GetSteamDeckKeyboardSkin(SteamMsgPlayer.CPlayer_GetSteamDeckKeyboardSkin_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetSteamDeckKeyboardSkin_Response SetSteamDeckKeyboardSkin(SteamMsgPlayer.CPlayer_SetSteamDeckKeyboardSkin_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetProfileItemsOwned_Response GetProfileItemsOwned(SteamMsgPlayer.CPlayer_GetProfileItemsOwned_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetProfileItemsEquipped_Response GetProfileItemsEquipped(SteamMsgPlayer.CPlayer_GetProfileItemsEquipped_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetEquippedProfileItemFlags_Response SetEquippedProfileItemFlags(SteamMsgPlayer.CPlayer_SetEquippedProfileItemFlags_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetEmoticonList_Response GetEmoticonList(SteamMsgPlayer.CPlayer_GetEmoticonList_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetCommunityBadgeProgress_Response GetCommunityBadgeProgress(SteamMsgPlayer.CPlayer_GetCommunityBadgeProgress_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetTopAchievementsForGames_Response GetTopAchievementsForGames(SteamMsgPlayer.CPlayer_GetTopAchievementsForGames_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetAchievementsProgress_Response GetAchievementsProgress(SteamMsgPlayer.CPlayer_GetAchievementsProgress_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetGameAchievements_Response GetGameAchievements(SteamMsgPlayer.CPlayer_GetGameAchievements_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetFavoriteBadge_Response GetFavoriteBadge(SteamMsgPlayer.CPlayer_GetFavoriteBadge_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetFavoriteBadge_Response SetFavoriteBadge(SteamMsgPlayer.CPlayer_SetFavoriteBadge_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetProfileCustomization_Response GetProfileCustomization(SteamMsgPlayer.CPlayer_GetProfileCustomization_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPurchasedProfileCustomizations_Response GetPurchasedProfileCustomizations(SteamMsgPlayer.CPlayer_GetPurchasedProfileCustomizations_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPurchasedAndUpgradedProfileCustomizations_Response GetPurchasedAndUpgradedProfileCustomizations(SteamMsgPlayer.CPlayer_GetPurchasedAndUpgradedProfileCustomizations_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetProfileThemesAvailable_Response GetProfileThemesAvailable(SteamMsgPlayer.CPlayer_GetProfileThemesAvailable_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetProfileTheme_Response SetProfileTheme(SteamMsgPlayer.CPlayer_SetProfileTheme_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetProfilePreferences_Response SetProfilePreferences(SteamMsgPlayer.CPlayer_SetProfilePreferences_Request request);
+
+    public SteamMsgPlayer.CPlayer_PostStatusToFriends_Response PostStatusToFriends(SteamMsgPlayer.CPlayer_PostStatusToFriends_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPostedStatus_Response GetPostedStatus(SteamMsgPlayer.CPlayer_GetPostedStatus_Request request);
+
+    public SteamMsgPlayer.CPlayer_DeletePostedStatus_Response DeletePostedStatus(SteamMsgPlayer.CPlayer_DeletePostedStatus_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetLastPlayedTimes_Response ClientGetLastPlayedTimes(SteamMsgPlayer.CPlayer_GetLastPlayedTimes_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetTimeSSAAccepted_Response GetTimeSSAAccepted(SteamMsgPlayer.CPlayer_GetTimeSSAAccepted_Request request);
+
+    public SteamMsgPlayer.CPlayer_AcceptSSA_Response AcceptSSA(SteamMsgPlayer.CPlayer_AcceptSSA_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetNicknameList_Response GetNicknameList(SteamMsgPlayer.CPlayer_GetNicknameList_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPerFriendPreferences_Response GetPerFriendPreferences(SteamMsgPlayer.CPlayer_GetPerFriendPreferences_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetPerFriendPreferences_Response SetPerFriendPreferences(SteamMsgPlayer.CPlayer_SetPerFriendPreferences_Request request);
+
+    public SteamMsgPlayer.CPlayer_AddFriend_Response AddFriend(SteamMsgPlayer.CPlayer_AddFriend_Request request);
+
+    public SteamMsgPlayer.CPlayer_RemoveFriend_Response RemoveFriend(SteamMsgPlayer.CPlayer_RemoveFriend_Request request);
+
+    public SteamMsgPlayer.CPlayer_IgnoreFriend_Response IgnoreFriend(SteamMsgPlayer.CPlayer_IgnoreFriend_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetCommunityPreferences_Response GetCommunityPreferences(SteamMsgPlayer.CPlayer_GetCommunityPreferences_Request request);
+
+    public SteamMsgPlayer.CPlayer_SetCommunityPreferences_Response SetCommunityPreferences(SteamMsgPlayer.CPlayer_SetCommunityPreferences_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetTextFilterWords_Response GetTextFilterWords(SteamMsgPlayer.CPlayer_GetTextFilterWords_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetNewSteamAnnouncementState_Response GetNewSteamAnnouncementState(SteamMsgPlayer.CPlayer_GetNewSteamAnnouncementState_Request request);
+
+    public SteamMsgPlayer.CPlayer_UpdateSteamAnnouncementLastRead_Response UpdateSteamAnnouncementLastRead(SteamMsgPlayer.CPlayer_UpdateSteamAnnouncementLastRead_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetPrivacySettings_Response GetPrivacySettings(SteamMsgPlayer.CPlayer_GetPrivacySettings_Request request);
+
+    public SteamMsgPlayer.CPlayer_GetDurationControl_Response GetDurationControl(SteamMsgPlayer.CPlayer_GetDurationControl_Request request);
+
+    public SteamMsgPlayer.CPlayer_RecordDisconnectedPlaytime_Response RecordDisconnectedPlaytime(SteamMsgPlayer.CPlayer_RecordDisconnectedPlaytime_Request request);
+    
+}
+

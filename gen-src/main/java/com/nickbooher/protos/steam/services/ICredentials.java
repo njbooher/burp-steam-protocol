@@ -1,0 +1,21 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgCredentials;
+
+public interface ICredentials {
+
+    public SteamMsgCredentials.CCredentials_TestAvailablePassword_Response TestAvailablePassword(SteamMsgCredentials.CCredentials_TestAvailablePassword_Request request);
+
+    public SteamMsgCredentials.CCredentials_GetSteamGuardDetails_Response GetSteamGuardDetails(SteamMsgCredentials.CCredentials_GetSteamGuardDetails_Request request);
+
+    public SteamMsgCredentials.CCredentials_ValidateEmailAddress_Response ValidateEmailAddress(SteamMsgCredentials.CCredentials_ValidateEmailAddress_Request request);
+
+    public SteamMsgCredentials.CCredentials_SteamGuardPhishingReport_Response SteamGuardPhishingReport(SteamMsgCredentials.CCredentials_SteamGuardPhishingReport_Request request);
+
+    public SteamMsgCredentials.CCredentials_LastCredentialChangeTime_Response GetCredentialChangeTimeDetails(SteamMsgCredentials.CCredentials_LastCredentialChangeTime_Request request);
+
+    public SteamMsgCredentials.CCredentials_GetAccountAuthSecret_Response GetAccountAuthSecret(SteamMsgCredentials.CCredentials_GetAccountAuthSecret_Request request);
+    
+}
+

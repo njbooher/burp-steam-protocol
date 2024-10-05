@@ -1,0 +1,35 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgAuth;
+
+public interface IAuthentication {
+
+    public SteamMsgAuth.CAuthentication_GetPasswordRSAPublicKey_Response GetPasswordRSAPublicKey(SteamMsgAuth.CAuthentication_GetPasswordRSAPublicKey_Request request);
+
+    public SteamMsgAuth.CAuthentication_BeginAuthSessionViaQR_Response BeginAuthSessionViaQR(SteamMsgAuth.CAuthentication_BeginAuthSessionViaQR_Request request);
+
+    public SteamMsgAuth.CAuthentication_BeginAuthSessionViaCredentials_Response BeginAuthSessionViaCredentials(SteamMsgAuth.CAuthentication_BeginAuthSessionViaCredentials_Request request);
+
+    public SteamMsgAuth.CAuthentication_PollAuthSessionStatus_Response PollAuthSessionStatus(SteamMsgAuth.CAuthentication_PollAuthSessionStatus_Request request);
+
+    public SteamMsgAuth.CAuthentication_GetAuthSessionInfo_Response GetAuthSessionInfo(SteamMsgAuth.CAuthentication_GetAuthSessionInfo_Request request);
+
+    public SteamMsgAuth.CAuthentication_UpdateAuthSessionWithMobileConfirmation_Response UpdateAuthSessionWithMobileConfirmation(SteamMsgAuth.CAuthentication_UpdateAuthSessionWithMobileConfirmation_Request request);
+
+    public SteamMsgAuth.CAuthentication_UpdateAuthSessionWithSteamGuardCode_Response UpdateAuthSessionWithSteamGuardCode(SteamMsgAuth.CAuthentication_UpdateAuthSessionWithSteamGuardCode_Request request);
+
+    public SteamMsgAuth.CAuthentication_AccessToken_GenerateForApp_Response GenerateAccessTokenForApp(SteamMsgAuth.CAuthentication_AccessToken_GenerateForApp_Request request);
+
+    public SteamMsgAuth.CAuthentication_RefreshToken_Enumerate_Response EnumerateTokens(SteamMsgAuth.CAuthentication_RefreshToken_Enumerate_Request request);
+
+    public SteamMsgAuth.CAuthentication_GetAuthSessionsForAccount_Response GetAuthSessionsForAccount(SteamMsgAuth.CAuthentication_GetAuthSessionsForAccount_Request request);
+
+    public SteamMsgAuth.CAuthentication_MigrateMobileSession_Response MigrateMobileSession(SteamMsgAuth.CAuthentication_MigrateMobileSession_Request request);
+
+    public SteamMsgAuth.CAuthentication_Token_Revoke_Response RevokeToken(SteamMsgAuth.CAuthentication_Token_Revoke_Request request);
+
+    public SteamMsgAuth.CAuthentication_RefreshToken_Revoke_Response RevokeRefreshToken(SteamMsgAuth.CAuthentication_RefreshToken_Revoke_Request request);
+    
+}
+

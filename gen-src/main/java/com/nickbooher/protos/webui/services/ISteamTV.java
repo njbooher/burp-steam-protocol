@@ -1,0 +1,74 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgsSteamTV;
+
+public interface ISteamTV {
+
+    public SteamMsgsSteamTV.CSteamTV_AddChatBan_Response AddChatBan(SteamMsgsSteamTV.CSteamTV_AddChatBan_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_AddChatModerator_Response AddChatModerator(SteamMsgsSteamTV.CSteamTV_AddChatModerator_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_AddWordBan_Response AddWordBan(SteamMsgsSteamTV.CSteamTV_AddWordBan_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_AppCheer_Response AppCheer(SteamMsgsSteamTV.CSteamTV_AppCheer_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_CreateBroadcastChannel_Response CreateBroadcastChannel(SteamMsgsSteamTV.CSteamTV_CreateBroadcastChannel_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_FollowBroadcastChannel_Response FollowBroadcastChannel(SteamMsgsSteamTV.CSteamTV_FollowBroadcastChannel_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelBroadcasters_Response GetBroadcastChannelBroadcasters(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelBroadcasters_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelClips_Response GetBroadcastChannelClips(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelClips_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelID_Response GetBroadcastChannelID(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelID_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelImages_Response GetBroadcastChannelImages(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelImages_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelInteraction_Response GetBroadcastChannelInteraction(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelInteraction_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelLinks_Response GetBroadcastChannelLinks(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelLinks_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelProfile_Response GetBroadcastChannelProfile(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelProfile_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelStatus_Response GetBroadcastChannelStatus(SteamMsgsSteamTV.CSteamTV_GetBroadcastChannelStatus_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetChannels_Response GetChannels(SteamMsgsSteamTV.CSteamTV_GetChannels_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetChatBans_Response GetChatBans(SteamMsgsSteamTV.CSteamTV_GetChatBans_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetChatModerators_Response GetChatModerators(SteamMsgsSteamTV.CSteamTV_GetChatModerators_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetFollowedChannels_Response GetFollowedChannels(SteamMsgsSteamTV.CSteamTV_GetFollowedChannels_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetGames_Response GetGames(SteamMsgsSteamTV.CSteamTV_GetGames_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetHomePageContents_Response GetHomePageContents(SteamMsgsSteamTV.CSteamTV_GetHomePageContents_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetMyBroadcastChannels_Response GetMyBroadcastChannels(SteamMsgsSteamTV.CSteamTV_GetMyBroadcastChannels_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetSteamTVUserSettings_Response GetSteamTVUserSettings(SteamMsgsSteamTV.CSteamTV_GetSteamTVUserSettings_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetSubscribedChannels_Response GetSubscribedChannels(SteamMsgsSteamTV.CSteamTV_GetSubscribedChannels_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_GetWordBans_Response GetWordBans(SteamMsgsSteamTV.CSteamTV_GetWordBans_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_JoinChat_Response JoinChat(SteamMsgsSteamTV.CSteamTV_JoinChat_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_ReportBroadcastChannel_Response ReportBroadcastChannel(SteamMsgsSteamTV.CSteamTV_ReportBroadcastChannel_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_Search_Response Search(SteamMsgsSteamTV.CSteamTV_Search_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_SetBroadcastChannelImage_Response SetBroadcastChannelImage(SteamMsgsSteamTV.CSteamTV_SetBroadcastChannelImage_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_SetBroadcastChannelLinkRegions_Response SetBroadcastChannelLinkRegions(SteamMsgsSteamTV.CSteamTV_SetBroadcastChannelLinkRegions_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_SetBroadcastChannelProfile_Response SetBroadcastChannelProfile(SteamMsgsSteamTV.CSteamTV_SetBroadcastChannelProfile_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_SetSteamTVUserSettings_Response SetSteamTVUserSettings(SteamMsgsSteamTV.CSteamTV_SetSteamTVUserSettings_Request request);
+
+    public SteamMsgsSteamTV.CSteamTV_SubscribeBroadcastChannel_Response SubscribeBroadcastChannel(SteamMsgsSteamTV.CSteamTV_SubscribeBroadcastChannel_Request request);
+    
+}
+

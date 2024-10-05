@@ -1,0 +1,26 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgsSteamInputManager;
+
+public interface ISteamInputManager {
+
+    public SteamMsgsSteamInputManager.CSteamInputService_ControllerStateFlow_Response EndControllerStateFlow(SteamMsgsSteamInputManager.CSteamInputService_ControllerStateFlow_Request request);
+
+    public void NotifyAxesStateChanged(SteamMsgsSteamInputManager.CSteamInputService_ControllerAxesStateChange_Notification request);
+
+    public void NotifyButtonStateChanged(SteamMsgsSteamInputManager.CSteamInputService_ControllerButtonStateChanged_Notification request);
+
+    public void NotifyGyroAccelerometerStateChanged(SteamMsgsSteamInputManager.CSteamInputService_GyroAccelerometerChanged_Notification request);
+
+    public void NotifyGyroCalibrationStateChanged(SteamMsgsSteamInputManager.CSteamInputService_GyroCalibration_Notification request);
+
+    public void NotifyGyroQuaternionStateChanged(SteamMsgsSteamInputManager.CSteamInputService_GyroQuaternionChanged_Notification request);
+
+    public void NotifyGyroSpeedStateChanged(SteamMsgsSteamInputManager.CSteamInputService_GyroSpeedChanged_Notification request);
+
+    public SteamMsgsSteamInputManager.CSteamInputService_ControllerStateFlow_Response StartControllerStateFlow(SteamMsgsSteamInputManager.CSteamInputService_ControllerStateFlow_Request request);
+    
+}
+

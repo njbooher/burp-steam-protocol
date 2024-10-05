@@ -1,0 +1,20 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgsSteamCharts;
+
+public interface ISteamCharts {
+
+    public SteamMsgsSteamCharts.CSteamCharts_GetBestOfYearPages_Response GetBestOfYearPages(SteamMsgsSteamCharts.CSteamCharts_GetBestOfYearPages_Request request);
+
+    public SteamMsgsSteamCharts.CSteamCharts_GetGamesByConcurrentPlayers_Response GetGamesByConcurrentPlayers(SteamMsgsSteamCharts.CSteamCharts_GetGamesByConcurrentPlayers_Request request);
+
+    public SteamMsgsSteamCharts.CSteamCharts_GetMostPlayedGames_Response GetMostPlayedGames(SteamMsgsSteamCharts.CSteamCharts_GetMostPlayedGames_Request request);
+
+    public SteamMsgsSteamCharts.CSteamCharts_GetMostPlayedSteamDeckGames_Response GetMostPlayedSteamDeckGames(SteamMsgsSteamCharts.CSteamCharts_GetMostPlayedSteamDeckGames_Request request);
+
+    public SteamMsgsSteamCharts.CSteamCharts_GetTopReleasesPages_Response GetTopReleasesPages(SteamMsgsSteamCharts.CSteamCharts_GetTopReleasesPages_Request request);
+    
+}
+

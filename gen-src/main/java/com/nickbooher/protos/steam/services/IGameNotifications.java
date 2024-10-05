@@ -1,0 +1,21 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgGameNotifications;
+
+public interface IGameNotifications {
+
+    public SteamMsgGameNotifications.CGameNotifications_CreateSession_Response UserCreateSession(SteamMsgGameNotifications.CGameNotifications_CreateSession_Request request);
+
+    public SteamMsgGameNotifications.CGameNotifications_DeleteSession_Response UserDeleteSession(SteamMsgGameNotifications.CGameNotifications_DeleteSession_Request request);
+
+    public SteamMsgGameNotifications.CGameNotifications_UpdateSession_Response UserUpdateSession(SteamMsgGameNotifications.CGameNotifications_UpdateSession_Request request);
+
+    public SteamMsgGameNotifications.CGameNotifications_EnumerateSessions_Response EnumerateSessions(SteamMsgGameNotifications.CGameNotifications_EnumerateSessions_Request request);
+
+    public SteamMsgGameNotifications.CGameNotifications_GetSessionDetails_Response GetSessionDetails(SteamMsgGameNotifications.CGameNotifications_GetSessionDetails_Request request);
+
+    public SteamMsgGameNotifications.CGameNotifications_UpdateNotificationSettings_Response UpdateNotificationSettings(SteamMsgGameNotifications.CGameNotifications_UpdateNotificationSettings_Request request);
+    
+}
+

@@ -1,0 +1,31 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgUserAccount;
+
+public interface IUserAccount {
+
+    public SteamMsgUserAccount.CUserAccount_GetAvailableValveDiscountPromotions_Response GetAvailableValveDiscountPromotions(SteamMsgUserAccount.CUserAccount_GetAvailableValveDiscountPromotions_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_GetWalletDetails_Response GetClientWalletDetails(SteamMsgUserAccount.CUserAccount_GetClientWalletDetails_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_GetAccountLinkStatus_Response GetAccountLinkStatus(SteamMsgUserAccount.CUserAccount_GetAccountLinkStatus_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_CancelLicenseForApp_Response CancelLicenseForApp(SteamMsgUserAccount.CUserAccount_CancelLicenseForApp_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_GetUserCountry_Response GetUserCountry(SteamMsgUserAccount.CUserAccount_GetUserCountry_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_CreateFriendInviteToken_Response CreateFriendInviteToken(SteamMsgUserAccount.CUserAccount_CreateFriendInviteToken_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_GetFriendInviteTokens_Response GetFriendInviteTokens(SteamMsgUserAccount.CUserAccount_GetFriendInviteTokens_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_ViewFriendInviteToken_Response ViewFriendInviteToken(SteamMsgUserAccount.CUserAccount_ViewFriendInviteToken_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_RedeemFriendInviteToken_Response RedeemFriendInviteToken(SteamMsgUserAccount.CUserAccount_RedeemFriendInviteToken_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_RevokeFriendInviteToken_Response RevokeFriendInviteToken(SteamMsgUserAccount.CUserAccount_RevokeFriendInviteToken_Request request);
+
+    public SteamMsgUserAccount.CUserAccount_RegisterCompatTool_Response RegisterCompatTool(SteamMsgUserAccount.CUserAccount_RegisterCompatTool_Request request);
+    
+}
+

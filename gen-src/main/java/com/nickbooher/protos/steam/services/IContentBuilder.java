@@ -1,0 +1,21 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgDepotBuilder;
+
+public interface IContentBuilder {
+
+    public SteamMsgDepotBuilder.CContentBuilder_InitDepotBuild_Response InitDepotBuild(SteamMsgDepotBuilder.CContentBuilder_InitDepotBuild_Request request);
+
+    public SteamMsgDepotBuilder.CContentBuilder_StartDepotUpload_Response StartDepotUpload(SteamMsgDepotBuilder.CContentBuilder_StartDepotUpload_Request request);
+
+    public SteamMsgDepotBuilder.CContentBuilder_GetMissingDepotChunks_Response GetMissingDepotChunks(SteamMsgDepotBuilder.CContentBuilder_GetMissingDepotChunks_Request request);
+
+    public SteamMsgDepotBuilder.CContentBuilder_FinishDepotUpload_Response FinishDepotUpload(SteamMsgDepotBuilder.CContentBuilder_FinishDepotUpload_Request request);
+
+    public SteamMsgDepotBuilder.CContentBuilder_CommitAppBuild_Response CommitAppBuild(SteamMsgDepotBuilder.CContentBuilder_CommitAppBuild_Request request);
+
+    public SteamMsgDepotBuilder.CContentBuilder_SignInstallScript_Response SignInstallScript(SteamMsgDepotBuilder.CContentBuilder_SignInstallScript_Request request);
+    
+}
+

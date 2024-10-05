@@ -1,0 +1,18 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgVideoClip;
+
+public interface IVideoClip {
+
+    public SteamMsgVideoClip.CVideo_BeginGameRecordingSegmentsUpload_Response BeginGameRecordingSegmentsUpload(SteamMsgVideoClip.CVideo_BeginGameRecordingSegmentsUpload_Request request);
+
+    public SteamMsgVideoClip.CVideo_CommitGameRecordingSegmentsUpload_Response CommitGameRecordingSegmentsUpload(SteamMsgVideoClip.CVideo_CommitGameRecordingSegmentsUpload_Request request);
+
+    public SteamMsgVideoClip.CVideo_GameRecordingCommitSegmentUploads_Response CommitSegmentUploads(SteamMsgVideoClip.CVideo_GameRecordingCommitSegmentUploads_Request request);
+
+    public SteamMsgVideoClip.CVideo_GameRecordingGetNextBatchOfSegmentsToUpload_Response GetNextBatchOfSegmentsToUpload(SteamMsgVideoClip.CVideo_GameRecordingGetNextBatchOfSegmentsToUpload_Request request);
+    
+}
+

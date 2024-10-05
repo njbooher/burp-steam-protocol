@@ -1,0 +1,37 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgRemoteClientMessages;
+
+public interface IRemoteClient {
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_GetPairingInfo_Response GetPairingInfo(SteamMsgRemoteClientMessages.CRemoteClient_GetPairingInfo_Request request);
+
+    public void NotifyOnline(SteamMsgRemoteClientMessages.CRemoteClient_Online_Notification request);
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_GetRecentClients_Response GetRecentClients(SteamMsgRemoteClientMessages.CRemoteClient_GetRecentClients_Request request);
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_MarkTaskComplete_Response MarkTaskComplete(SteamMsgRemoteClientMessages.CRemoteClient_MarkTaskComplete_Request request);
+
+    public void NotifyReplyPacket(SteamMsgRemoteClientMessages.CRemoteClient_ReplyPacket_Notification request);
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_AllocateRelayServer_Response AllocateRelayServer(SteamMsgRemoteClientMessages.CRemoteClient_AllocateRelayServer_Request request);
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_AllocateSDR_Response AllocateSDR(SteamMsgRemoteClientMessages.CRemoteClient_AllocateSDR_Request request);
+
+    public void SendSteamBroadcastPacket(SteamMsgRemoteClientMessages.CRemoteClient_SteamBroadcast_Notification request);
+
+    public void SendSteamToSteamPacket(SteamMsgRemoteClientMessages.CRemoteClient_SteamToSteam_Notification request);
+
+    public SteamMsgRemoteClientMessages.CRemotePlay_SessionStarted_Response SendRemotePlaySessionStarted(SteamMsgRemoteClientMessages.CRemotePlay_SessionStarted_Request request);
+
+    public void SendRemotePlaySessionStopped(SteamMsgRemoteClientMessages.CRemotePlay_SessionStopped_Notification request);
+
+    public void SendRemotePlayTogetherPacket(SteamMsgRemoteClientMessages.CRemotePlayTogether_Notification request);
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_CreateRemotePlayTogetherInvitation_Response CreateRemotePlayTogetherInvitation(SteamMsgRemoteClientMessages.CRemoteClient_CreateRemotePlayTogetherInvitation_Request request);
+
+    public SteamMsgRemoteClientMessages.CRemoteClient_DeleteRemotePlayTogetherInvitation_Response DeleteRemotePlayTogetherInvitation(SteamMsgRemoteClientMessages.CRemoteClient_DeleteRemotePlayTogetherInvitation_Request request);
+    
+}
+

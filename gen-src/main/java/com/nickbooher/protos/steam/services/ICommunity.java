@@ -1,0 +1,47 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgCommunity;
+
+public interface ICommunity {
+
+    public SteamMsgCommunity.CCommunity_GetApps_Response GetApps(SteamMsgCommunity.CCommunity_GetApps_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetAppRichPresenceLocalization_Response GetAppRichPresenceLocalization(SteamMsgCommunity.CCommunity_GetAppRichPresenceLocalization_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetCommentThread_Response GetCommentThread(SteamMsgCommunity.CCommunity_GetCommentThread_Request request);
+
+    public SteamMsgCommunity.CCommunity_PostCommentToThread_Response PostCommentToThread(SteamMsgCommunity.CCommunity_PostCommentToThread_Request request);
+
+    public SteamMsgCommunity.CCommunity_DeleteCommentFromThread_Response DeleteCommentFromThread(SteamMsgCommunity.CCommunity_DeleteCommentFromThread_Request request);
+
+    public SteamMsgCommunity.CCommunity_RateCommentThread_Response RateCommentThread(SteamMsgCommunity.CCommunity_RateCommentThread_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetCommentThreadRatings_Response GetCommentThreadRatings(SteamMsgCommunity.CCommunity_GetCommentThreadRatings_Request request);
+
+    public SteamMsgCommunity.CCommunity_RateClanAnnouncement_Response RateClanAnnouncement(SteamMsgCommunity.CCommunity_RateClanAnnouncement_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetClanAnnouncementVoteForUser_Response GetClanAnnouncementVoteForUser(SteamMsgCommunity.CCommunity_GetClanAnnouncementVoteForUser_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetAvatarHistory_Response GetAvatarHistory(SteamMsgCommunity.CCommunity_GetAvatarHistory_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetUserPartnerEventNews_Response GetUserPartnerEventNews(SteamMsgCommunity.CCommunity_GetUserPartnerEventNews_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetBestEventsForUser_Response GetBestEventsForUser(SteamMsgCommunity.CCommunity_GetBestEventsForUser_Request request);
+
+    public SteamMsgCommunity.CCommunity_MarkPartnerEventsForUser_Response MarkPartnerEventsForUser(SteamMsgCommunity.CCommunity_MarkPartnerEventsForUser_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetUserPartnerEventViewStatus_Response GetUserPartnerEventViewStatus(SteamMsgCommunity.CCommunity_GetUserPartnerEventViewStatus_Request request);
+
+    public SteamMsgCommunity.CCommunity_PartnerEventsShowMoreForApp_Response PartnerEventsShowMoreForApp(SteamMsgCommunity.CCommunity_PartnerEventsShowMoreForApp_Request request);
+
+    public SteamMsgCommunity.CCommunity_PartnerEventsShowLessForApp_Response PartnerEventsShowLessForApp(SteamMsgCommunity.CCommunity_PartnerEventsShowLessForApp_Request request);
+
+    public SteamMsgCommunity.CCommunity_ClearUserPartnerEventsAppPriorities_Response ClearUserPartnerEventsAppPriorities(SteamMsgCommunity.CCommunity_ClearUserPartnerEventsAppPriorities_Request request);
+
+    public SteamMsgCommunity.CCommunity_GetUserPartnerEventsAppPriorities_Response GetUserPartnerEventsAppPriorities(SteamMsgCommunity.CCommunity_GetUserPartnerEventsAppPriorities_Request request);
+
+    public SteamMsgCommunity.CCommunity_ClearSinglePartnerEventsAppPriority_Response ClearSinglePartnerEventsAppPriority(SteamMsgCommunity.CCommunity_ClearSinglePartnerEventsAppPriority_Request request);
+    
+}
+

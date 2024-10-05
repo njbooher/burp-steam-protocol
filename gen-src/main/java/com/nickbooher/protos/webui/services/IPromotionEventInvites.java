@@ -1,0 +1,22 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgPromotionEventInvites;
+
+public interface IPromotionEventInvites {
+
+    public SteamMsgPromotionEventInvites.CPromotionEventInvites_AcceptInvite_Response AcceptInvite(SteamMsgPromotionEventInvites.CPromotionEventInvites_AcceptInvite_Request request);
+
+    public SteamMsgPromotionEventInvites.CPromotionEventInvites_CancelInvite_Response CancelInvite(SteamMsgPromotionEventInvites.CPromotionEventInvites_CancelInvite_Request request);
+
+    public SteamMsgPromotionEventInvites.CPromotionEventInvites_GetEmailTargets_Response GetEmailTargets(SteamMsgPromotionEventInvites.CPromotionEventInvites_GetEmailTargets_Request request);
+
+    public SteamMsgPromotionEventInvites.CPromotionEventInvites_GetInvite_Response GetInvite(SteamMsgPromotionEventInvites.CPromotionEventInvites_GetInvite_Request request);
+
+    public SteamMsgPromotionEventInvites.CPromotionEventInvites_ResendEmailInvite_Response ResendEmailInvite(SteamMsgPromotionEventInvites.CPromotionEventInvites_ResendEmailInvite_Request request);
+
+    public SteamMsgPromotionEventInvites.CPromotionEventInvites_SetInvite_Response SetInvite(SteamMsgPromotionEventInvites.CPromotionEventInvites_SetInvite_Request request);
+    
+}
+

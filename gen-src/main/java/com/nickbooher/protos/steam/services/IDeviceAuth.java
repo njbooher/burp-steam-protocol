@@ -1,0 +1,31 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgDeviceAuth;
+
+public interface IDeviceAuth {
+
+    public SteamMsgDeviceAuth.CDeviceAuth_GetOwnAuthorizedDevices_Response GetOwnAuthorizedDevices(SteamMsgDeviceAuth.CDeviceAuth_GetOwnAuthorizedDevices_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_AcceptAuthorizationRequest_Response AcceptAuthorizationRequest(SteamMsgDeviceAuth.CDeviceAuth_AcceptAuthorizationRequest_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_AuthorizeRemoteDevice_Response AuthorizeRemoteDevice(SteamMsgDeviceAuth.CDeviceAuth_AuthorizeRemoteDevice_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_DeauthorizeRemoteDevice_Response DeauthorizeRemoteDevice(SteamMsgDeviceAuth.CDeviceAuth_DeauthorizeRemoteDevice_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_GetUsedAuthorizedDevices_Response GetUsedAuthorizedDevices(SteamMsgDeviceAuth.CDeviceAuth_GetUsedAuthorizedDevices_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_GetAuthorizedBorrowers_Response GetAuthorizedBorrowers(SteamMsgDeviceAuth.CDeviceAuth_GetAuthorizedBorrowers_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_AddAuthorizedBorrowers_Response AddAuthorizedBorrowers(SteamMsgDeviceAuth.CDeviceAuth_AddAuthorizedBorrowers_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_RemoveAuthorizedBorrowers_Response RemoveAuthorizedBorrowers(SteamMsgDeviceAuth.CDeviceAuth_RemoveAuthorizedBorrowers_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_GetAuthorizedAsBorrower_Response GetAuthorizedAsBorrower(SteamMsgDeviceAuth.CDeviceAuth_GetAuthorizedAsBorrower_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_GetExcludedGamesInLibrary_Response GetExcludedGamesInLibrary(SteamMsgDeviceAuth.CDeviceAuth_GetExcludedGamesInLibrary_Request request);
+
+    public SteamMsgDeviceAuth.CDeviceAuth_GetBorrowerPlayHistory_Response GetBorrowerPlayHistory(SteamMsgDeviceAuth.CDeviceAuth_GetBorrowerPlayHistory_Request request);
+    
+}
+

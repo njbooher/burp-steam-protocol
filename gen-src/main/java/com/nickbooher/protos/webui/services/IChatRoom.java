@@ -1,0 +1,116 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgChatRoom;
+
+public interface IChatRoom {
+
+    public void AckChatMessage(SteamMsgChatRoom.CChatRoom_AckChatMessage_Notification request);
+
+    public SteamMsgChatRoom.CChatRoom_AddRoleToUser_Response AddRoleToUser(SteamMsgChatRoom.CChatRoom_AddRoleToUser_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_CreateChatRoom_Response CreateChatRoom(SteamMsgChatRoom.CChatRoom_CreateChatRoom_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_CreateChatRoomGroup_Response CreateChatRoomGroup(SteamMsgChatRoom.CChatRoom_CreateChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_CreateInviteLink_Response CreateInviteLink(SteamMsgChatRoom.CChatRoom_CreateInviteLink_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_CreateRole_Response CreateRole(SteamMsgChatRoom.CChatRoom_CreateRole_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_DeleteChatMessages_Response DeleteChatMessages(SteamMsgChatRoom.CChatRoom_DeleteChatMessages_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_DeleteChatRoom_Response DeleteChatRoom(SteamMsgChatRoom.CChatRoom_DeleteChatRoom_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_DeleteInviteLink_Response DeleteInviteLink(SteamMsgChatRoom.CChatRoom_DeleteInviteLink_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_DeleteRole_Response DeleteRole(SteamMsgChatRoom.CChatRoom_DeleteRole_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_DeleteRoleFromUser_Response DeleteRoleFromUser(SteamMsgChatRoom.CChatRoom_DeleteRoleFromUser_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_EndMiniGameForChatRoomGroup_Response EndMiniGameForChatRoomGroup(SteamMsgChatRoom.CChatRoom_EndMiniGameForChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetBanList_Response GetBanList(SteamMsgChatRoom.CChatRoom_GetBanList_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetChatRoomGroupState_Response GetChatRoomGroupState(SteamMsgChatRoom.CChatRoom_GetChatRoomGroupState_Request request);
+
+    public SteamMsgCommon.CChatRoom_GetChatRoomGroupSummary_Response GetChatRoomGroupSummary(SteamMsgChatRoom.CChatRoom_GetChatRoomGroupSummary_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetInviteInfo_Response GetInviteInfo(SteamMsgChatRoom.CChatRoom_GetInviteInfo_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetInviteLinkInfo_Response GetInviteLinkInfo(SteamMsgChatRoom.CChatRoom_GetInviteLinkInfo_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetInviteLinksForGroup_Response GetInviteLinksForGroup(SteamMsgChatRoom.CChatRoom_GetInviteLinksForGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetInviteList_Response GetInviteList(SteamMsgChatRoom.CChatRoom_GetInviteList_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetMessageHistory_Response GetMessageHistory(SteamMsgChatRoom.CChatRoom_GetMessageHistory_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetMessageReactionReactors_Response GetMessageReactionReactors(SteamMsgChatRoom.CChatRoom_GetMessageReactionReactors_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetMyChatRoomGroups_Response GetMyChatRoomGroups(SteamMsgChatRoom.CChatRoom_GetMyChatRoomGroups_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetRoleActions_Response GetRoleActions(SteamMsgChatRoom.CChatRoom_GetRoleActions_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetRoles_Response GetRoles(SteamMsgChatRoom.CChatRoom_GetRoles_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_GetRolesForUser_Response GetRolesForUser(SteamMsgChatRoom.CChatRoom_GetRolesForUser_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_InviteFriendToChatRoomGroup_Response InviteFriendToChatRoomGroup(SteamMsgChatRoom.CChatRoom_InviteFriendToChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_JoinChatRoomGroup_Response JoinChatRoomGroup(SteamMsgChatRoom.CChatRoom_JoinChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_JoinMiniGameForChatRoomGroup_Response JoinMiniGameForChatRoomGroup(SteamMsgChatRoom.CChatRoom_JoinMiniGameForChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_JoinVoiceChat_Response JoinVoiceChat(SteamMsgChatRoom.CChatRoom_JoinVoiceChat_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_KickUser_Response KickUserFromGroup(SteamMsgChatRoom.CChatRoom_KickUser_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_LeaveChatRoomGroup_Response LeaveChatRoomGroup(SteamMsgChatRoom.CChatRoom_LeaveChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_LeaveVoiceChat_Response LeaveVoiceChat(SteamMsgChatRoom.CChatRoom_LeaveVoiceChat_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_MuteUser_Response MuteUserInGroup(SteamMsgChatRoom.CChatRoom_MuteUser_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_RenameChatRoom_Response RenameChatRoom(SteamMsgChatRoom.CChatRoom_RenameChatRoom_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_RenameChatRoomGroup_Response RenameChatRoomGroup(SteamMsgChatRoom.CChatRoom_RenameChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_RenameRole_Response RenameRole(SteamMsgChatRoom.CChatRoom_RenameRole_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_ReorderChatRoom_Response ReorderChatRoom(SteamMsgChatRoom.CChatRoom_ReorderChatRoom_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_ReorderRole_Response ReorderRole(SteamMsgChatRoom.CChatRoom_ReorderRole_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_ReplaceRoleActions_Response ReplaceRoleActions(SteamMsgChatRoom.CChatRoom_ReplaceRoleActions_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_RevokeInvite_Response RevokeInviteToGroup(SteamMsgChatRoom.CChatRoom_RevokeInvite_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SaveChatRoomGroup_Response SaveChatRoomGroup(SteamMsgChatRoom.CChatRoom_SaveChatRoomGroup_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SearchMembers_Response SearchMembers(SteamMsgChatRoom.CChatRoom_SearchMembers_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SendChatMessage_Response SendChatMessage(SteamMsgChatRoom.CChatRoom_SendChatMessage_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SetAppChatRoomGroupForceActive_Response SetAppChatRoomGroupForceActive(SteamMsgChatRoom.CChatRoom_SetAppChatRoomGroupForceActive_Request request);
+
+    public void SetAppChatRoomGroupStopForceActive(SteamMsgChatRoom.CChatRoom_SetAppChatRoomGroupStopForceActive_Notification request);
+
+    public SteamMsgChatRoom.CChatRoom_SetChatRoomGroupAvatar_Response SetChatRoomGroupAvatar(SteamMsgChatRoom.CChatRoom_SetChatRoomGroupAvatar_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SetChatRoomGroupTagline_Response SetChatRoomGroupTagline(SteamMsgChatRoom.CChatRoom_SetChatRoomGroupTagline_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SetChatRoomGroupWatchingBroadcast_Response SetChatRoomGroupWatchingBroadcast(SteamMsgChatRoom.CChatRoom_SetChatRoomGroupWatchingBroadcast_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SetSessionActiveChatRoomGroups_Response SetSessionActiveChatRoomGroups(SteamMsgChatRoom.CChatRoom_SetSessionActiveChatRoomGroups_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SetUserBanState_Response SetUserBanState(SteamMsgChatRoom.CChatRoom_SetUserBanState_Request request);
+
+    public SteamMsgChatRoom.CChatRoom_SetUserChatGroupPreferences_Response SetUserChatGroupPreferences(SteamMsgChatRoom.CChatRoom_SetUserChatGroupPreferences_Request request);
+
+    public void UpdateMemberListView(SteamMsgChatRoom.CChatRoom_UpdateMemberListView_Notification request);
+
+    public SteamMsgChatRoom.CChatRoom_UpdateMessageReaction_Response UpdateMessageReaction(SteamMsgChatRoom.CChatRoom_UpdateMessageReaction_Request request);
+    
+}
+

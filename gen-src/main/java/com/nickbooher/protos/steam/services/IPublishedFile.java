@@ -1,0 +1,75 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgPublishedFile;
+
+public interface IPublishedFile {
+
+    public SteamMsgPublishedFile.CPublishedFile_Vote_Response Vote(SteamMsgPublishedFile.CPublishedFile_Vote_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_Subscribe_Response Subscribe(SteamMsgPublishedFile.CPublishedFile_Subscribe_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_Unsubscribe_Response Unsubscribe(SteamMsgPublishedFile.CPublishedFile_Unsubscribe_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_CanSubscribe_Response CanSubscribe(SteamMsgPublishedFile.CPublishedFile_CanSubscribe_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetSubSectionData_Response GetSubSectionData(SteamMsgPublishedFile.CPublishedFile_GetSubSectionData_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_Publish_Response Publish(SteamMsgPublishedFile.CPublishedFile_Publish_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetDetails_Response GetDetails(SteamMsgPublishedFile.CPublishedFile_GetDetails_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetItemInfo_Response GetItemInfo(SteamMsgPublishedFile.CPublishedFile_GetItemInfo_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetUserFiles_Response GetUserFiles(SteamMsgPublishedFile.CPublishedFile_GetUserFiles_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetUserFiles_Response GetUserFileCount(SteamMsgPublishedFile.CPublishedFile_GetUserFiles_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_AreFilesInSubscriptionList_Response AreFilesInSubscriptionList(SteamMsgPublishedFile.CPublishedFile_AreFilesInSubscriptionList_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_Update_Response Update(SteamMsgPublishedFile.CPublishedFile_Update_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_Delete_Response Delete(SteamMsgPublishedFile.CPublishedFile_Delete_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetChangeHistoryEntry_Response GetChangeHistoryEntry(SteamMsgPublishedFile.CPublishedFile_GetChangeHistoryEntry_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetChangeHistory_Response GetChangeHistory(SteamMsgPublishedFile.CPublishedFile_GetChangeHistory_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_RefreshVotingQueue_Response RefreshVotingQueue(SteamMsgPublishedFile.CPublishedFile_RefreshVotingQueue_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_QueryFiles_Response QueryFiles(SteamMsgPublishedFile.CPublishedFile_QueryFiles_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_AddAppRelationship_Response AddAppRelationship(SteamMsgPublishedFile.CPublishedFile_AddAppRelationship_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_RemoveAppRelationship_Response RemoveAppRelationship(SteamMsgPublishedFile.CPublishedFile_RemoveAppRelationship_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetAppRelationships_Response GetAppRelationships(SteamMsgPublishedFile.CPublishedFile_GetAppRelationships_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetAppRelationshipsBatched_Response GetAppRelationshipsBatched(SteamMsgPublishedFile.CPublishedFile_GetAppRelationshipsBatched_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_StartPlaytimeTracking_Response StartPlaytimeTracking(SteamMsgPublishedFile.CPublishedFile_StartPlaytimeTracking_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_StopPlaytimeTracking_Response StopPlaytimeTracking(SteamMsgPublishedFile.CPublishedFile_StopPlaytimeTracking_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_StopPlaytimeTrackingForAllAppItems_Response StopPlaytimeTrackingForAllAppItems(SteamMsgPublishedFile.CPublishedFile_StopPlaytimeTrackingForAllAppItems_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_SetPlaytimeForControllerConfigs_Response SetPlaytimeForControllerConfigs(SteamMsgPublishedFile.CPublishedFile_SetPlaytimeForControllerConfigs_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_AddChild_Response AddChild(SteamMsgPublishedFile.CPublishedFile_AddChild_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_RemoveChild_Response RemoveChild(SteamMsgPublishedFile.CPublishedFile_RemoveChild_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_SetCollectionChildren_Response SetCollectionChildren(SteamMsgPublishedFile.CPublishedFile_SetCollectionChildren_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_SetSubscriptionListFromCollection_Response SetSubscriptionListFromCollection(SteamMsgPublishedFile.CPublishedFile_SetSubscriptionListFromCollection_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetUserVoteSummary_Response GetUserVoteSummary(SteamMsgPublishedFile.CPublishedFile_GetUserVoteSummary_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetItemChanges_Response GetItemChanges(SteamMsgPublishedFile.CPublishedFile_GetItemChanges_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_GetContentDescriptors_Response GetContentDescriptors(SteamMsgPublishedFile.CPublishedFile_GetContentDescriptors_Request request);
+
+    public SteamMsgPublishedFile.CPublishedFile_UpdateContentDescriptors_Response UpdateContentDescriptors(SteamMsgPublishedFile.CPublishedFile_UpdateContentDescriptors_Request request);
+    
+}
+

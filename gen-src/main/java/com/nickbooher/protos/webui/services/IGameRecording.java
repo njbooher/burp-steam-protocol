@@ -1,0 +1,98 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgGameRecording;
+
+public interface IGameRecording {
+
+    public SteamMsgGameRecording.CGameRecording_CleanupBackgroundRecordings_Response CleanupBackgroundRecordings(SteamMsgGameRecording.CGameRecording_CleanupBackgroundRecordings_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_DeleteClip_Response DeleteClip(SteamMsgGameRecording.CGameRecording_DeleteClip_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_DeletePerGameSettings_Response DeletePerGameSettings(SteamMsgGameRecording.CGameRecording_DeletePerGameSettings_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_ExportClip_Response ExportClip(SteamMsgGameRecording.CGameRecording_ExportClip_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_ExportClipPreview_Response ExportClipPreview(SteamMsgGameRecording.CGameRecording_ExportClipPreview_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetActiveTimelineApps_Response GetActiveTimelineApps(SteamMsgGameRecording.CGameRecording_GetActiveTimelineApps_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetAndTrimPostGameHighlights_Response GetAndTrimPostGameHighlights(SteamMsgGameRecording.CGameRecording_GetAndTrimPostGameHighlights_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetAvailableDiskSpace_Response GetAvailableDiskSpace(SteamMsgGameRecording.CGameRecording_GetAvailableDiskSpace_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetRecordingSize_Response GetBackgroundRecordingFileSize(SteamMsgGameRecording.CGameRecording_GetRecordingSize_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetClips_Response GetClips(SteamMsgGameRecording.CGameRecording_GetClips_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetEnoughDiskSpace_Response GetEnoughDiskSpace(SteamMsgGameRecording.CGameRecording_GetEnoughDiskSpace_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetPerGameSettings_Response GetPerGameSettings(SteamMsgGameRecording.CGameRecording_GetPerGameSettings_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetPlatformCapabilities_Response GetPlatformCapabilities(SteamMsgGameRecording.CGameRecording_GetPlatformCapabilities_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetTags_Response GetTags(SteamMsgGameRecording.CGameRecording_GetTags_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetThumbnails_Response GetThumbnails(SteamMsgGameRecording.CGameRecording_GetThumbnails_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetTimelinesForApp_Response GetTimelinesForApp(SteamMsgGameRecording.CGameRecording_GetTimelinesForApp_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetTimelinesForClip_Response GetTimelinesForClip(SteamMsgGameRecording.CGameRecording_GetTimelinesForClip_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_GetTotalDiskSpaceUsage_Response GetTotalDiskSpaceUsage(SteamMsgGameRecording.CGameRecording_GetTotalDiskSpaceUsage_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_ManuallyDeleteRecordingsForApps_Response ManuallyDeleteRecordingsForApps(SteamMsgGameRecording.CGameRecording_ManuallyDeleteRecordingsForApps_Request request);
+
+    public void NotifyClipCreated(SteamMsgGameRecording.CGameRecording_ClipCreated_Notification request);
+
+    public void NotifyClipDeleted(SteamMsgGameRecording.CGameRecording_ClipDeleted_Notification request);
+
+    public void NotifyExportProgress(SteamMsgGameRecording.CGameRecording_ExportProgress_Notification request);
+
+    public void NotifyLowDiskSpace(SteamMsgGameRecording.CGameRecording_LowDiskSpace_Notification request);
+
+    public void NotifyOpenOverlayToGamePhase(SteamMsgGameRecording.CGameRecording_OpenOverlayToGamePhase_Notification request);
+
+    public void NotifyOpenOverlayToTimelineEvent(SteamMsgGameRecording.CGameRecording_OpenOverlayToTimelineEvent_Notification request);
+
+    public void NotifyPhaseListChanged(SteamMsgGameRecording.CGameRecording_PhaseListChanged_Notification request);
+
+    public void NotifyPostGameHighlightsChanged(SteamMsgGameRecording.CGameRecording_PostGameHighlightsChanged_Notification request);
+
+    public void NotifyRecordingSessionChanged(SteamMsgGameRecording.CGameRecording_RecordingSessionChanged_Notification request);
+
+    public void NotifyTimelineChanged(SteamMsgGameRecording.CGameRecording_TimelineChanged_Notification request);
+
+    public void NotifyTimelineEntryChanged(SteamMsgGameRecording.CGameRecording_TimelineEntryChanged_Notification request);
+
+    public void NotifyTimelineEntryRemoved(SteamMsgGameRecording.CGameRecording_TimelineEntryRemoved_Notification request);
+
+    public void NotifyUploadProgress(SteamMsgGameRecording.CGameRecording_UploadProgress_Notification request);
+
+    public SteamMsgGameRecording.CGameRecording_QueryPhases_Response QueryPhases(SteamMsgGameRecording.CGameRecording_QueryPhases_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_SaveClip_Response SaveClip(SteamMsgGameRecording.CGameRecording_SaveClip_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_SetPerGameSettings_Response SetPerGameSettings(SteamMsgGameRecording.CGameRecording_SetPerGameSettings_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_StartRecording_Response StartRecording(SteamMsgGameRecording.CGameRecording_StartRecording_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_StopRecording_Response StopRecording(SteamMsgGameRecording.CGameRecording_StopRecording_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_SwitchBackgroundRecordingGame_Response SwitchBackgroundRecordingGame(SteamMsgGameRecording.CGameRecording_SwitchBackgroundRecordingGame_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_TakeScreenshot_Response TakeScreenshot(SteamMsgGameRecording.CGameRecording_TakeScreenshot_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_UploadClipToSteam_Response UploadClipToSteam(SteamMsgGameRecording.CGameRecording_UploadClipToSteam_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_UserAddTimelineEntry_Response UserAddTimelineEntry(SteamMsgGameRecording.CGameRecording_UserAddTimelineEntry_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_UserRemoveTimelineEntry_Response UserRemoveTimelineEntry(SteamMsgGameRecording.CGameRecording_UserRemoveTimelineEntry_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_UserUpdateTimelineEntry_Response UserUpdateTimelineEntry(SteamMsgGameRecording.CGameRecording_UserUpdateTimelineEntry_Request request);
+
+    public SteamMsgGameRecording.CGameRecording_ZipClip_Response ZipClip(SteamMsgGameRecording.CGameRecording_ZipClip_Request request);
+    
+}
+

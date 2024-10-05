@@ -1,0 +1,26 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgAssetSetPublishing;
+
+public interface IAssetSetPublishing {
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_AddBranchToAssetSet_Response AddBranchToAssetSet(SteamMsgAssetSetPublishing.CAssetSetPublishing_AddBranchToAssetSet_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_CreateAssetSet_Response CreateAssetSet(SteamMsgAssetSetPublishing.CAssetSetPublishing_CreateAssetSet_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_DeleteAssetSet_Response DeleteAssetSet(SteamMsgAssetSetPublishing.CAssetSetPublishing_DeleteAssetSet_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_GetAllAssetSets_Response GetAllAssetSets(SteamMsgAssetSetPublishing.CAssetSetPublishing_GetAllAssetSets_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_RemoseBranchFromAssetSet_Response RemoveBranchFromAssetSet(SteamMsgAssetSetPublishing.CAssetSetPublishing_RemoveBranchFromAssetSet_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_SwapAssetSetPriority_Response SwapAssetSetPriority(SteamMsgAssetSetPublishing.CAssetSetPublishing_SwapAssetSetPriority_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_UpdateAssetSet_Response UpdateAssetSet(SteamMsgAssetSetPublishing.CAssetSetPublishing_UpdateAssetSet_Request request);
+
+    public SteamMsgAssetSetPublishing.CAssetSetPublishing_UpdatePublishTime_Response UpdatePublishTime(SteamMsgAssetSetPublishing.CAssetSetPublishing_UpdatePublishTime_Request request);
+    
+}
+

@@ -1,0 +1,50 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgStore;
+
+public interface IStore {
+
+    public SteamMsgStore.CStore_DeleteReservationPositionMessage_Response DeleteReservationPositionMessage(SteamMsgStore.CStore_DeleteReservationPositionMessage_Request request);
+
+    public SteamMsgStore.CStore_GetAllReservationPositionMessages_Response GetAllReservationPositionMessages(SteamMsgStore.CStore_GetAllReservationPositionMessages_Request request);
+
+    public SteamMsgStore.CStore_GetDiscoveryQueue_Response GetDiscoveryQueue(SteamMsgStore.CStore_GetDiscoveryQueue_Request request);
+
+    public SteamMsgStore.CStore_GetDiscoveryQueueSettings_Response GetDiscoveryQueueSettings(SteamMsgStore.CStore_GetDiscoveryQueueSettings_Request request);
+
+    public SteamMsgStore.CStore_GetDiscoveryQueueSkippedApps_Response GetDiscoveryQueueSkippedApps(SteamMsgStore.CStore_GetDiscoveryQueueSkippedApps_Request request);
+
+    public SteamMsgStore.CStore_GetLocalizedNameForTags_Response GetLocalizedNameForTags(SteamMsgStore.CStore_GetLocalizedNameForTags_Request request);
+
+    public SteamMsgStore.CStore_GetMostPopularTags_Response GetMostPopularTags(SteamMsgStore.CStore_GetMostPopularTags_Request request);
+
+    public SteamMsgStore.CStore_GetStorePreferences_Response GetStorePreferences(SteamMsgStore.CStore_GetStorePreferences_Request request);
+
+    public SteamMsgStore.CStore_GetTagList_Response GetTagList(SteamMsgStore.CStore_GetTagList_Request request);
+
+    public SteamMsgStore.CStore_GetTrendingAppsAmongFriends_Response GetTrendingAppsAmongFriends(SteamMsgStore.CStore_GetTrendingAppsAmongFriends_Request request);
+
+    public SteamMsgStore.CStore_GetUserGameInterestState_Response GetUserGameInterestState(SteamMsgStore.CStore_GetUserGameInterestState_Request request);
+
+    public SteamMsgStore.CStore_GetWishlistDemoEmailStatus_Response GetWishlistDemoEmailStatus(SteamMsgStore.CStore_GetWishlistDemoEmailStatus_Request request);
+
+    public SteamMsgStore.CStore_QueueWishlistDemoEmailToFire_Response QueueWishlistDemoEmailToFire(SteamMsgStore.CStore_QueueWishlistDemoEmailToFire_Request request);
+
+    public SteamMsgStore.CStore_RegisterCDKey_Response RegisterCDKey(SteamMsgStore.CStore_RegisterCDKey_Request request);
+
+    public SteamMsgStore.CStore_ReportApp_Response ReportApp(SteamMsgStore.CStore_ReportApp_Request request);
+
+    public SteamMsgStore.CSteamDeckCompatibility_SetFeedback_Response SetCompatibilityFeedback(SteamMsgStore.CSteamDeckCompatibility_SetFeedback_Request request);
+
+    public SteamMsgStore.CStore_SetReservationPositionMessage_Response SetReservationPositionMessage(SteamMsgStore.CStore_SetReservationPositionMessage_Request request);
+
+    public SteamMsgStore.CSteamDeckCompatibility_ShouldPrompt_Response ShouldPromptForCompatibilityFeedback(SteamMsgStore.CSteamDeckCompatibility_ShouldPrompt_Request request);
+
+    public SteamMsgStore.CStore_SkipDiscoveryQueueItem_Response SkipDiscoveryQueueItem(SteamMsgStore.CStore_SkipDiscoveryQueueItem_Request request);
+
+    public SteamMsgStore.CStore_UpdatePackageReservations_Response UpdatePackageReservations(SteamMsgStore.CStore_UpdatePackageReservations_Request request);
+    
+}
+

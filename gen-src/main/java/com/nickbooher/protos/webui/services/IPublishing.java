@@ -1,0 +1,32 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgPublishing;
+
+public interface IPublishing {
+
+    public SteamMsgPublishing.CPublishing_CreatePartnerAppOptInEmail_Response CreatePartnerAppOptInEmails(SteamMsgPublishing.CPublishing_CreatePartnerAppOptInEmail_Request request);
+
+    public SteamMsgPublishing.CPublishing_GetEstimatePartnerAppOptInEmail_Response GetEstimatePartnerAppOptInEmail(SteamMsgPublishing.CPublishing_GetEstimatePartnerAppOptInEmail_Request request);
+
+    public SteamMsgPublishing.CPublishing_GetOptInAppealsSummaryStats_Response GetOptInAppealsSummaryStats(SteamMsgPublishing.CPublishing_GetOptInAppealsSummaryStats_Request request);
+
+    public SteamMsgPublishing.CPublishing_GetOptInEmailTracking_Response GetOptInEmailTracking(SteamMsgPublishing.CPublishing_GetOptInEmailTracking_Request request);
+
+    public SteamMsgPublishing.CPublishing_GetPartnerAppOptInEmailDefAndStats_Response GetPartnerAppOptInEmailDefAndStats(SteamMsgPublishing.CPublishing_GetPartnerAppOptInEmailDefAndStats_Request request);
+
+    public SteamMsgPublishing.CPublishing_GetPartnerPaidGivenPackageList_Response GetPartnerPaidGivenPackageList(SteamMsgPublishing.CPublishing_GetPartnerPaidGivenPackageList_Request request);
+
+    public SteamMsgPublishing.CPublishing_GetSinglePartnerAppOptIns_Response GetSinglePartnerAppOptIn(SteamMsgPublishing.CPublishing_GetSinglePartnerAppOptIns_Request request);
+
+    public SteamMsgPublishing.CPublishing_SendPartnerAppOptInEmailAndWait_Response SendPartnerOptInEmailAndWait(SteamMsgPublishing.CPublishing_SendPartnerAppOptInEmailAndWait_Request request);
+
+    public SteamMsgPublishing.CPublishing_SetFeaturingOnPartnerAppOptIn_Response SetFeaturingOnPartnerAppOptIn(SteamMsgPublishing.CPublishing_SetFeaturingOnPartnerAppOptIn_Request request);
+
+    public SteamMsgPublishing.CPublishing_TestFirePartnerAppOptInEmail_Response TestFirePartnerAppOptInEmail(SteamMsgPublishing.CPublishing_TestFirePartnerAppOptInEmail_Request request);
+
+    public SteamMsgPublishing.CPublishing_UpdatePartnerAppOptInEmail_Response UpdatePartnerAppOptInEmails(SteamMsgPublishing.CPublishing_UpdatePartnerAppOptInEmail_Request request);
+    
+}
+

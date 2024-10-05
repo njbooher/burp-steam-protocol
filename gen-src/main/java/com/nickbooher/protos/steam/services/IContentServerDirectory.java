@@ -1,0 +1,23 @@
+
+package com.nickbooher.protos.steam.services;
+
+import com.nickbooher.protos.steam.SteamMsgContentSystem;
+
+public interface IContentServerDirectory {
+
+    public SteamMsgContentSystem.CContentServerDirectory_GetServersForSteamPipe_Response GetServersForSteamPipe(SteamMsgContentSystem.CContentServerDirectory_GetServersForSteamPipe_Request request);
+
+    public SteamMsgContentSystem.CContentServerDirectory_GetDepotPatchInfo_Response GetDepotPatchInfo(SteamMsgContentSystem.CContentServerDirectory_GetDepotPatchInfo_Request request);
+
+    public SteamMsgContentSystem.CContentServerDirectory_GetClientUpdateHosts_Response GetClientUpdateHosts(SteamMsgContentSystem.CContentServerDirectory_GetClientUpdateHosts_Request request);
+
+    public SteamMsgContentSystem.CContentServerDirectory_GetManifestRequestCode_Response GetManifestRequestCode(SteamMsgContentSystem.CContentServerDirectory_GetManifestRequestCode_Request request);
+
+    public SteamMsgContentSystem.CContentServerDirectory_GetCDNAuthToken_Response GetCDNAuthToken(SteamMsgContentSystem.CContentServerDirectory_GetCDNAuthToken_Request request);
+
+    public SteamMsgContentSystem.CContentServerDirectory_RequestPeerContentServer_Response RequestPeerContentServer(SteamMsgContentSystem.CContentServerDirectory_RequestPeerContentServer_Request request);
+
+    public SteamMsgContentSystem.CContentServerDirectory_GetPeerContentInfo_Response GetPeerContentInfo(SteamMsgContentSystem.CContentServerDirectory_GetPeerContentInfo_Request request);
+    
+}
+

@@ -1,0 +1,32 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgBluetoothManager;
+
+public interface IBluetoothManager {
+
+    public SteamMsgBluetoothManager.CBluetoothManager_CancelPair_Response CancelPair(SteamMsgBluetoothManager.CBluetoothManager_CancelPair_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_Connect_Response Connect(SteamMsgBluetoothManager.CBluetoothManager_Connect_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_Disconnect_Response Disconnect(SteamMsgBluetoothManager.CBluetoothManager_Disconnect_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_Forget_Response Forget(SteamMsgBluetoothManager.CBluetoothManager_Forget_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_GetAdapterDetails_Response GetAdapterDetails(SteamMsgBluetoothManager.CBluetoothManager_GetAdapterDetails_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_GetDeviceDetails_Response GetDeviceDetails(SteamMsgBluetoothManager.CBluetoothManager_GetDeviceDetails_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_GetState_Response GetState(SteamMsgBluetoothManager.CBluetoothManager_GetState_Request request);
+
+    public void NotifyStateChanged(SteamMsgBluetoothManager.CBluetoothManager_StateChanged_Notification request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_Pair_Response Pair(SteamMsgBluetoothManager.CBluetoothManager_Pair_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_SetDiscovering_Response SetDiscovering(SteamMsgBluetoothManager.CBluetoothManager_SetDiscovering_Request request);
+
+    public SteamMsgBluetoothManager.CBluetoothManager_SetWakeAllowed_Response SetWakeAllowed(SteamMsgBluetoothManager.CBluetoothManager_SetWakeAllowed_Request request);
+    
+}
+

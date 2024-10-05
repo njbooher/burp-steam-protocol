@@ -1,0 +1,26 @@
+
+package com.nickbooher.protos.webui.services;
+
+import com.nickbooher.protos.webui.SteamMsgCommon;
+import com.nickbooher.protos.webui.SteamMsgStorageDeviceManager;
+
+public interface IStorageDeviceManager {
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_Adopt_Response Adopt(SteamMsgStorageDeviceManager.CStorageDeviceManager_Adopt_Request request);
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_Eject_Response Eject(SteamMsgStorageDeviceManager.CStorageDeviceManager_Eject_Request request);
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_Format_Response Format(SteamMsgStorageDeviceManager.CStorageDeviceManager_Format_Request request);
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_GetState_Response GetState(SteamMsgStorageDeviceManager.CStorageDeviceManager_GetState_Request request);
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_IsServiceAvailable_Response IsServiceAvailable(SteamMsgStorageDeviceManager.CStorageDeviceManager_IsServiceAvailable_Request request);
+
+    public void NotifyStateChanged(SteamMsgStorageDeviceManager.CStorageDeviceManager_StateChanged_Notification request);
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_TrimAll_Response TrimAll(SteamMsgStorageDeviceManager.CStorageDeviceManager_TrimAll_Request request);
+
+    public SteamMsgStorageDeviceManager.CStorageDeviceManager_Unmount_Response Unmount(SteamMsgStorageDeviceManager.CStorageDeviceManager_Unmount_Request request);
+    
+}
+
