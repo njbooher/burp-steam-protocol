@@ -11,3 +11,5 @@ bin
 .classpath
 .idea
 .vscode
+/resources/custom
+resources/protos_custom.csv
