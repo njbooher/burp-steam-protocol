@@ -56,9 +56,6 @@ jobs:
     - name: Build Game protos
       run: python scripts/pb_compile.py --mode=game
 
-    - name: Build custom protos
-      run: python scripts/pb_compile.py --mode=custom
-
     - name: Build jar with Gradle
       run: ./gradlew --stacktrace jar
     
