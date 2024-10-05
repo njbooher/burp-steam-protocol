@@ -64,13 +64,13 @@ public class SteamHttpBaseEditor {
 
     protected void setUMInterfaceAndMethod() {
         String pathWithoutQuery = this.requestResponse.request().pathWithoutQuery();
-        this.api.logging().logToOutput(pathWithoutQuery);
+        //this.api.logging().logToOutput(pathWithoutQuery);
         Matcher matcher = this.umMatchPattern.matcher(pathWithoutQuery);
         if (matcher.find()) {
             this.umInterface = matcher.group(1);
-            this.api.logging().logToOutput(this.umInterface);
+            //this.api.logging().logToOutput(this.umInterface);
             this.umMethod = matcher.group(2);
-            this.api.logging().logToOutput(this.umMethod);
+            //this.api.logging().logToOutput(this.umMethod);
         } else {
             this.api.logging().logToError("setUMInterfaceAndMethod: Unable to split request path into interface and method");
         }
