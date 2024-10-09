@@ -6,6 +6,8 @@ import subprocess
 import re
 import argparse
 
+import glob
+
 PROTOWORKPATH="build/tmp/protobuf"
 SERVICEOUTPATH="gen-src/main/java/com/nickbooher/protos"
 
@@ -63,17 +65,27 @@ rpc_pattern = r'^\s+rpc (?P<rpc_name>[A-Za-z0-9_-]+) \([A-Za-z0-9_-]+\.(?P<reque
 
 def copy_and_transform(PROTOSRCPATH, protos):
 
+    all_protos = {}
+    
     for proto in protos:
 
         filedir = os.path.dirname(proto['File'])
+        filename = os.path.basename(proto['File'])
+
         protobuf_package = filedir
 
         work_filedir = os.path.join(PROTOWORKPATH, filedir)
 
+        src_filedir = os.path.join(PROTOSRCPATH, filedir)
         src_filepath = os.path.join(PROTOSRCPATH, proto['File'])
         work_filepath = os.path.join(PROTOWORKPATH, proto['File'])
 
         os.makedirs(work_filedir, exist_ok=True)
+
+        if src_filedir not in all_protos:
+            all_protos[src_filedir] = set([proto_filename for proto_filename in glob.glob('*.proto', root_dir=src_filedir)])
+        
+        all_protos[src_filedir].remove(filename)
 
         with open(src_filepath, 'r') as input_file:
             proto_text = input_file.read()
@@ -88,6 +100,15 @@ def copy_and_transform(PROTOSRCPATH, protos):
 
         with open(work_filepath, 'w') as output_file:
             output_file.write(proto_text)
+    
+
+    for src_filedir in all_protos:
+
+        if len(all_protos[src_filedir]) > 0:
+            print(f"Warning: {len(all_protos[src_filedir])} unused protos in {src_filedir}")
+            for proto_filename in sorted(all_protos[src_filedir]):
+                print(f"\t{proto_filename}")
+        
 
 def build(protos):
     for proto in protos:
@@ -98,7 +119,6 @@ def build(protos):
         work_filepath = os.path.join(PROTOWORKPATH, proto['File'])
 
         cmd = ['protoc', '--java_out', './gen-src/main/java/', '--proto_path', work_filedir, work_filepath]
-        print(' '.join(cmd))
         subprocess.check_output(cmd)
 
 def gen_services(protos):
