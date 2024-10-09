@@ -11,5 +11,6 @@ bin
 .classpath
 .idea
 .vscode
-/resources/custom
-resources/protos_custom.csv
+
+custom/**
+gen-src/main/java/com/nickbooher/protos/custom/**

@@ -226,7 +226,7 @@ def main_game():
     main_base('resources/protos_game.csv', 'Protobufs', gen_services)
 
 def main_custom():
-    main_base('resources/protos_custom.csv', 'resources', gen_services)
+    main_base('custom/resources/protos_custom.csv', 'custom/resources', gen_services)
 
 def main_webui():
     main_base('resources/protos_webui.csv', 'Protobufs', gen_services_webui)
