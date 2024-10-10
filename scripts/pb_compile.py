@@ -126,6 +126,9 @@ def gen_services(protos):
     for proto in protos:
 
         filedir = os.path.dirname(proto['File'])
+        
+        if proto['Package'] == 'com.nickbooher.protos.steamworks':
+            filedir = 'steamworks'
 
         proto_filepath = os.path.join(PROTOWORKPATH, proto['File'])
 
